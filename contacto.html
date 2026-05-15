@@ -4,7 +4,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Programas</title>
+        <title>Contacto</title>
         <link rel="stylesheet" href="estilos.css">
 
     </head>
@@ -17,13 +17,13 @@
 
                 <ul>
 
-                    <li><strong><a href="index.html" > Inicio </a></strong></li>
+                    <li><a href="index.html" class="link-nav"> Inicio </a></li>
                     
-                    <li><strong><a href="nosotros.html" > Nosotros </a></strong></li>
+                    <li><a href="nosotros.html" class="link-nav"> Nosotros </a></li>
                     
-                    <li><strong><a href="programas.html" >Programas </a></strong></li>
+                    <li><a href="programas.html" class="link-nav">Programas </a></li>
                     
-                    <li><strong><a href="contacto.html" > Contacto </a></strong></li>
+                    <li><a href="contacto.html" class="link-nav"> Contacto </a></li>
                 
                 </ul>
 
@@ -31,43 +31,70 @@
 
         </header>
 
-        <main>
+        <main class="main-contact">
 
-            <h1>Si querés comunicarte con nosotros o participar en nuestros programas, podés hacerlo a través de los siguientes medios:</h1>
+            
 
-            <section>
-                <h2>Contacto</h2>
+            <section class="container-form-redes">
 
-                <p><strong>Teléfono:</strong> 
-                    <a>+54 11 1234-5678</a>
-                </p>
+                <article>
 
-                <p><strong>Email:</strong> 
-                    <a>info@conexionsegura.org</a>
-                </p>
-            </section>
+                    <form action="" class="form-contact">
 
-            <section>
-                <h2> Donde nos encontramos? </h2>
-                <p><strong>Dirección:</strong> Av. Tecnología 1234, Buenos Aires</p>
+                        <p>Ingresa tus datos y envia tus datos para ser parte de nuestros talleres.</p>
 
-                <img src="multimedia/mapa.jpeg" alt="mapa-ubicacion">
+                        <input type="text"  placeholder="Nombre">
 
-            </section>
+                        <input type="text"  placeholder="Apellido">
 
-            <section>
+                        <input type="text" placeholder="Email">
 
-                <h2>Redes Sociales</h2>
+                        <input type="text" placeholder="Telefono">
 
-                <ul>
+                        <div class="label-select">
+                            <label for="">¿Que taller te interesa?</label>
+                            <select>
+                                <option value=""> Navega seguro </option>
+                                <option value=""> Stop Ciberbullying </option>
+                                <option value=""> Detectives Digitales </option>
+                            </select>
 
-                    <li><a href="https://instagram.com/conexionsegura" target="_blank">Instagram</a></li>
+                        </div>
+                        
 
-                    <li><a href="https://facebook.com/conexionsegura" target="_blank">Facebook</a></li>
+                        <button type="submit" >Enviar</button>
+                    </form>
 
-                    <li><a href="https://twitter.com/conexionsegura" target="_blank">Twitter</a></li>
+                </article>
 
-                </ul>
+                <div class="container-contact-redes">
+
+                
+
+                <article class="contact-redes">
+                    <p>Te invitamos a visitar nuestras redes!</p>
+
+                    <ul>
+
+                        <li>
+                            <label> Twitter: </label>
+                            <a href="https://instagram.com/conexionsegura" target="_blank">@conexionsegura.ok</a>
+                        </li>
+
+                        <li>
+                            <label> TikTok: </label>
+                            <a href="https://facebook.com/conexionsegura" target="_blank">@conexion_segura</a>
+                        </li>
+
+                        <li>
+                            <label> Instagram: </label>
+                            <a href="https://twitter.com/conexionsegura" target="_blank">@conexionsegura</a>
+                        </li>
+
+                    </ul>
+                </article>
+
+                </div>
 
             </section>
 

@@ -1,13 +1,206 @@
 /*estilos PROGRAMAS*/
 
+:root{
+    --color-principal: #2f348b;
+    --color-secundaria:#c241e2;
+}
+
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(224, 224, 224);
+    
 }
 
+
+
+
+
+h1{
+    margin:0;
+    
+}
+
+
+.programs{
+    display: flex;
+    background-color: white;
+    width: fit-content;
+    padding: 1.2rem 1.4rem;
+    border-radius: 1.25rem;
+    
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.container-programs{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.main-programs{
+    padding:2rem 2rem 6rem 2rem;
+}
+
+.programs ul li{
+    font-size: 1.3rem;
+    
+}
+
+.programs ul{
+   
+    gap: 4rem;
+    
+}
+
+.programs h2{
+    border-radius: 3rem;
+    background: linear-gradient(to right,var(--color-principal) 13% ,var(--color-secundaria) );
+    color: white;
+    padding: 0.5rem 1.6rem;
+    width: fit-content ;
+    margin: 0;
+    margin-bottom: 1.2rem;
+
+
+}
+
+
+.programs img{
+    width: 24rem;
+    border-radius: 1.25rem;
+    height: 14.5rem;
+    margin-left: 1rem;
+}
+
+
+/* ESTILOS CONTACTO.HTML */
+.main-contact{
+    padding: 6rem 2rem; 
+
+}
+
+.container-form-redes{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+.form-contact{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    width: 32rem;
+    padding: 2rem 2rem;
+    border-radius: 1rem;
+    gap: 2rem;
+    
+    
+}
+
+.form-contact p{
+    font-size: 1.3rem;
+    padding: 0 0.3rem;
+    margin: 0;
+}
+
+.form-contact input{
+    font-size: 1.2rem;
+    padding: 0.3rem 0.7rem;
+    border-radius: 0.8rem;
+    border: 2px solid rgb(187, 187, 187);
+}
+
+.form-contact button{
+    padding: 0.5rem 1rem;
+    border-radius: 1.2rem;
+    font-size: 1.5rem;
+    background-color: var(--color-principal);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer; 
+    width: fit-content;
+    border: none;
+    background: linear-gradient(to left,var(--color-principal) 10%,var(--color-secundaria));
+    align-self: center;
+}
+
+
+.form-contact .label-select{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.3rem;
+    width: fit-content;
+    gap:0.3rem;
+}
+
+.form-contact label{
+    font-size: 1.2rem;
+}
+
+
+select{
+    font-size: 1rem;
+    padding: 0.3rem 0.5rem;
+    border-radius: 0.8rem;
+    border: 2px solid rgb(187, 187, 187);
+}
+
+.contact-redes{
+    background-color: white;
+    font-size: 1.4rem;
+    width: 32rem;
+    width: fit-content;
+    padding: 2rem 2rem;
+    height: fit-content;
+    border-radius: 1rem;
+    
+    
+}
+
+.contact-redes p{
+    font-size:1.4rem ;
+    margin: 0;
+}
+
+.contact-redes ul{
+    list-style: none;
+
+    padding: 0;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.contact-redes ul a{
+    text-decoration: none;
+    color: rgb(3, 3, 112);
+    cursor: pointer; 
+}
+
+.contact-redes ul a:hover{
+    text-decoration: underline
+}
+
+.container-contact-redes {
+    display: flex;
+    
+    align-items: center;
+}
+
+
+/* ESTILOS NAV Y FOOTER */
 nav{
-    background: linear-gradient(to right,#2B2F77 40%,#3e6db8);
+    background: linear-gradient(to right,var(--color-principal) 40%,var(--color-secundaria));
     margin-top: 0;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
@@ -16,13 +209,12 @@ nav{
 nav ul{
     display: flex;
     list-style: none;
-    margin-top: 0;
     justify-content: center;
     gap: 12.5rem;
+    align-items: center;
 }
 
 nav ul li{
-    margin-top: 1rem;
     font-size: 1.5rem;
 }
 
@@ -37,51 +229,12 @@ nav ul li{
     text-decoration: underline;
 }
 
-.programs{
-    display: flex;
-    background-color: white;
-    width: fit-content;
-    padding: 1rem  1.25rem;
-    border-radius: 1.25rem;
-    margin-top: 2rem;
-    min-width: 59%;
-    justify-content: space-between;
-    align-items: center;
-}
-
-main{
-    margin-left: 4rem;
-}
-
-.programs ul li{
-    font-size: 1.3rem;
-
-}
-
-.programs h2{
-    border-radius: 3rem;
-    background-color: #363a91;
-    color: white;
-    padding: 0.5rem 1.8rem;
-    width: fit-content ;
-
-    
-}
-
-
-.programs img{
-    width: 24rem;
-    border-radius: 1.25rem;
-    height: 14.5rem;
-    margin-left: 1rem;
-}
 
 footer{
     text-align: center;
     background-color: #2B2F77;
     color: white;
     padding: 4rem 0;
-    margin-top: 5rem;
 }
 
 footer ul{
@@ -96,7 +249,6 @@ footer li{
 
 aside{
     font-size: 1.3rem;
-    margin-top: 6rem;
 }
 
 
