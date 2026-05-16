@@ -1,3 +1,115 @@
+/*estilos INDEX*/
+
+.main-index {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.main-index section {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.presentacion {
+  text-align: center;
+}
+
+.main-index h1 {
+  font-size: 2.4rem;
+  margin-bottom: 1rem;
+}
+
+.main-index h2 {
+  color: var(--color-principal);
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.main-index p {
+  font-size: 1.15rem;
+  line-height: 1.6;
+}
+
+.lista-activitidades,
+.impact-stats {
+  padding-left: 1.2rem;
+}
+
+.lista-activitidades li,
+.impact-stats li {
+  margin-bottom: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.impacto {
+  background: linear-gradient(
+    to right,
+    rgba(47,52,139,0.08),
+    rgba(194,65,226,0.08)
+  );
+  padding: 2.5rem;
+  border-radius: 1rem;
+  box-shadow: none;
+}
+
+.impacto-layout {
+  display: flex;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.impacto-contenido {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.impacto-imagenes {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.impacto-imagenes img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+.impact-stats li {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.btn-primary {
+  display: inline-block;
+  margin-top: 1rem;
+  background: linear-gradient(to right, var(--color-principal), var(--color-secundaria));
+  color: white;
+  padding: 0.7rem 1.6rem;
+  border-radius: 1rem;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.cierre {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+
+
+
 /*estilos PROGRAMAS*/
 
 :root{
@@ -9,9 +121,10 @@ body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: rgb(224, 224, 224);
-    
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
-
 
 
 
@@ -81,6 +194,11 @@ h1{
 .main-contact{
     padding: 6rem 2rem; 
 
+}
+
+main{
+    flex: 1;
+     padding: 2rem 2rem 6rem 2rem;
 }
 
 .container-form-redes{
